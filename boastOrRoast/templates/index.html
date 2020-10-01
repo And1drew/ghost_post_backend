@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostPost Backend</title>
+</head>
+<body>
+    <span>click <a href="api/boastorroast/">here </a>to go to the api page</span><br>
+    <span>and <a href="/admin/">here </a>to go to the admin page</span><br>
+
+    <header>All the posts on the site no particular order</header>
+    <ul>
+        {% for post in data %}
+        <li>{{post.description}}<br>{{post.id}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
